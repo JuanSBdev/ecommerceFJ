@@ -8,6 +8,11 @@ function App() {
 
   return (
     <>
+<<<<<<< HEAD
+=======
+      <section> Modification </section>
+      <section> second modification </section>
+>>>>>>> development-front
       <div>
         <a href="https://vitejs.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
