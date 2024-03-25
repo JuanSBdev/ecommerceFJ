@@ -20,10 +20,17 @@
 
 @keyframes logo-spin {
   from {
+<<<<<<< HEAD
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+=======
     transform: rotate(90deg);
   }
   to {
     transform: rotate(320deg);
+>>>>>>> development-front
   }
 }
 
