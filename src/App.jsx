@@ -9,8 +9,16 @@ function App() {
   let bears = useStore((state)=>state.bears)
   return (
     <>
+<<<<<<< HEAD
       <section> Modification </section>
       <section> second modification </section>
+=======
+
+      <section> Modification </section>
+      <section> second modification </section>
+      <section> 3° modification </section>
+
+>>>>>>> 9031983f8bc5c5d9aa97aa0d9f5ad1308c54d519
       <div>
         <a href="https://vitejs.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
