@@ -5,20 +5,22 @@ import './App.css'
 import  useStore  from './zustand/store'
 
 function App() {
-  const [count, setCount] = useState(0)
   let bears = useStore((state)=>state.bears)
+  let count = useStore((state)=>state.count)
+  
+  //asi traemos en una sola renderización de a mas estados 
+  const { incrementCount, increasePopulation } = useStore(state => ({
+    incrementCount: state.increaseCount,
+    increasePopulation: state.increasePopulation
+  }))
+
   return (
     <>
-<<<<<<< HEAD
-      <section> Modification </section>
-      <section> second modification </section>
-=======
 
       <section> Modification </section>
       <section> second modification </section>
       <section> 3° modification </section>
 
->>>>>>> 9031983f8bc5c5d9aa97aa0d9f5ad1308c54d519
       <div>
         <a href="https://vitejs.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
@@ -35,8 +37,10 @@ function App() {
         <p>
           Edit <code>src/App.jsx</code> and save to test HMR
         </p>
+        <button onClick={increasePopulation}> + bears </button>
+        <button onClick={incrementCount}> + count </button>
         <p>
-        there is {bears} bears
+        the Bears are {bears} 
 
         </p>
       </div>
