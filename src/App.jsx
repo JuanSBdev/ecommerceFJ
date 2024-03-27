@@ -7,7 +7,7 @@ import  useStore  from './zustand/store'
 function App() {
   let bears = useStore((state)=>state.bears)
   let count = useStore((state)=>state.count)
-  
+
   //asi traemos en una sola renderización de a mas estados 
   const { incrementCount, increasePopulation } = useStore(state => ({
     incrementCount: state.increaseCount,
@@ -22,12 +22,7 @@ function App() {
       <section> 3° modification </section>
 
       <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+        
       </div>
       <h1>Vite + React</h1>
       <div className="card">
