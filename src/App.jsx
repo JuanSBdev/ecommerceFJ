@@ -3,25 +3,24 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import  useStore  from './zustand/store'
-import { Routes, Route  } from 'react-router-dom'
+import { Routes, Route, Link  } from 'react-router-dom'
 
 import StartView  from './views/StartView'
 
 function App() {
-  // let bears = useStore((state)=>state.bears)
-  // let count = useStore((state)=>state.count)
 
-  // //asi traemos en una sola renderización de a mas estados 
-  // const { incrementCount, increasePopulation } = useStore(state => ({
-  //   incrementCount: state.increaseCount,
-  //   increasePopulation: state.increasePopulation
-  // }))
 
   return (
     <>
-    <p>asd</p>
+        < Link to={'/'}><button> Router Inicio </button></Link>
+        < Link to={'/start'}><button> Router Example </button></Link>
+
     <Routes>
-       <Route path="/asd" element={  <StartView/>  }  />
+       <Route path="/" element={<>
+        <h1>Ecommerce con Fede</h1>
+       </>}  />
+
+       <Route path="/start" element={  <StartView/>  }  />
     </Routes>
     </>
   )
