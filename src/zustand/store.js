@@ -7,7 +7,7 @@ const useStore = create((set) => ({
   updateBears: (newBears) => set({ bears: newBears }),
 
   count:0,
-  increaseCount: () => set((state)=>({count: state.count + 1})) 
+  increaseCount: () => set((state)=>({count: state.count + 2})) 
 }))
 
 export default useStore;
