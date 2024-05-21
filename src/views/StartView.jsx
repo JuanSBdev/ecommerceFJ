@@ -1,6 +1,8 @@
 import React from 'react'
 
-import useStore from '../zustand/store'
+import useStore from '../zustand/store';
+import Card from '../components/Card'
+
 
 export default function StartView() {
     let {count, increasePopulation, incrementCount, bears }  = useStore((state)=> ({
@@ -14,7 +16,6 @@ export default function StartView() {
 
   return (
     <div>
-
 
 
         <h1>Products</h1>
@@ -39,6 +40,9 @@ export default function StartView() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
+<Card/>
+
+
     </div>
   )
 }

@@ -9,7 +9,7 @@ const useStore = create((set) => ({
       let data = response.data;
 
       set({ products: data})
-
+      console.log(data)
     } catch (error) {
       console.log(error)
     }
