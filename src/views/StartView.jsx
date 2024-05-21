@@ -19,11 +19,12 @@ export default function StartView() {
 
 
         <h1>Products</h1>
-        {products.map((p, i)=> <p key={i}> { p.title }</p>)}
+        <div className="flex">
+          <Card/>
 
-      
+        </div>
     
-      <div className="card">
+      {/* <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
         </button>
@@ -39,8 +40,7 @@ export default function StartView() {
       </div>
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
-      </p>
-<Card/>
+      </p> */}
 
 
     </div>
