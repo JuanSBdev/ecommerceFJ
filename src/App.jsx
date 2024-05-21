@@ -20,14 +20,14 @@ function App() {
   return (
     <>
         < Link to={'/'}><button> Router Inicio </button></Link>
-        < Link to={'/start'}><button> Router Example </button></Link>
+        < Link to={'/start'}><button> Router Products </button></Link>
 
     <Routes>
-       <Route path="/" element={<>
-        <h1>Ecommerce con Fede</h1>
-        {products.map((p, i)=> <p key={i}> { p.title }</p>)}
-
-       </>}  />
+       <Route path="/" element={
+        <>
+        <h1>Ecommerce Test I</h1>
+        </>
+                            }/>
 
        <Route path="/start" element={  <StartView/>  }  />
     </Routes>

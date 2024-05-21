@@ -8,12 +8,19 @@ export default function StartView() {
         bears: state.bears,
         increasePopulation: state.increasePopulation,
         incrementCount: state.increaseCount
-
-
     }))    
+
+    let products = useStore((state)=>(state.products))
+
   return (
     <div>
 
+
+
+        <h1>Products</h1>
+        {products.map((p, i)=> <p key={i}> { p.title }</p>)}
+
+      
     
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
