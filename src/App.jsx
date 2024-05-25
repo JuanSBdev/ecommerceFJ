@@ -6,6 +6,7 @@ import  useStore  from './zustand/store'
 import { Routes, Route, Link  } from 'react-router-dom'
 
 import StartView  from './views/StartView'
+import  Navbar  from './components/NavBar'
 
 
 function App() {
@@ -19,8 +20,8 @@ function App() {
 
   return (
     <>
-        < Link to={'/'}><button> Router Inicio </button></Link>
-        < Link to={'/start'}><button> Router Products </button></Link>
+   
+      <Navbar></Navbar>
 
     <Routes>
        <Route path="/" element={
