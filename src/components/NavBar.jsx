@@ -271,7 +271,9 @@ export default function NavBar() {
         
  
         
-            < Link to={'/start'}><Button size="sm" variant="text" > Router Products  </Button></Link>
+            <Link to={'/start'}>
+                <Typography size="sm" variant="text" className="mr-4 ml-2 cursor-pointer py-1.5 font-medium" as='a' > Products  </Typography>
+            </Link>
        
 
         <ProfileMenu />

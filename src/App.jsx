@@ -20,18 +20,18 @@ function App() {
 
   return (
     <>
-   
       <Navbar></Navbar>
+   
 
-    <Routes>
-       <Route path="/" element={
-        <>
-        <h1>Ecommerce Test I</h1>
-        </>
-                            }/>
+      <Routes>
+        <Route path="/" element={
+          <>
+          <h1>Ecommerce Test I</h1>
+          </>
+                              }/>
 
-       <Route path="/start" element={  <StartView/>  }  />
-    </Routes>
+        <Route path="/start" element={  <StartView/>  }  />
+      </Routes>
     </>
   )
 }
