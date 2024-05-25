@@ -24,10 +24,8 @@ function App() {
    
 
       <Routes>
-        <Route path="/" element={
-          <>
-          <h1>Ecommerce Test I</h1>
-          </>
+        <Route path="/" element={<>
+        </>
                               }/>
 
         <Route path="/start" element={  <StartView/>  }  />

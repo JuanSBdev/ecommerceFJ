@@ -259,6 +259,7 @@ export default function NavBar() {
         </IconButton>
         <Typography
           as="a"
+          variant="text"
           className="mr-4 ml-2 cursor-pointer py-1.5 font-medium"
         >
             < Link to={'/'}> Home </Link>
@@ -272,7 +273,7 @@ export default function NavBar() {
  
         
             <Link to={'/start'}>
-                <Typography size="sm" variant="text" className="mr-4 ml-2 cursor-pointer py-1.5 font-medium" as='a' > Products  </Typography>
+                <Typography size="sm" variant="text" className="mr-4 ml-2 cursor-pointer py-1.5 font-medium"  > Products  </Typography>
             </Link>
        
 
